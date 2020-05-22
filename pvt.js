@@ -55,6 +55,7 @@
 		count=0;
 		timerOn=0;
 		document.getElementById("numeric").innerHTML="";
+		document.bgColor = '';
 		var currentT= (new Date()).getTime();
 		if((currentT-testStart)>= (testDuration*60000)){//test is finished
 			stopPVT();
@@ -91,6 +92,7 @@
 	//called when user wishes to terminate entire test or when preset duration is reached.
 	function stopPVT(){
 		document.getElementById("buttons").innerHTML="";
+		document.bgColor = '';
 		clearTimeout(t);
 		count=0;
 		timerOn=0;
@@ -121,6 +123,7 @@
 			return;
 		}
 		document.getElementById("numeric").innerHTML="<h1>"+count+"</h1>";
+		document.bgColor = window.location.hash.substring(1) === 'fullbg' ? 'darkred' : '';
 		if(count==0){
 			startT=(new Date()).getTime();
 		}
