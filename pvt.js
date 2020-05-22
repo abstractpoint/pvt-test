@@ -70,6 +70,7 @@
 	function init(){
 		document.getElementById("box").addEventListener('mousedown', handleMouseDown);
 		document.getElementById("box").addEventListener('mousemove', handleMouseMove);
+		document.addEventListener('keydown', handleMouseDown);
 	}
 
 	function startEntireTest(){
