@@ -68,8 +68,8 @@
 	}
 	
 	function init(){
-		document.getElementById("box").onmousedown=handleMouseDown;
-		document.getElementById("box").onmousemove=handleMouseMove;;
+		document.getElementById("box").on('mousedown', handleMouseDown);
+		document.getElementById("box").on('mousemove', handleMouseMove);
 	}
 
 	function startEntireTest(){
